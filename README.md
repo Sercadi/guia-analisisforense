@@ -5,18 +5,6 @@
 
 Esta es una guía realizada por mí, siguiendo pequeñas investigaciones por la red abierta o viendo material de libros, de uso y explicación de diferentes artefactos forenses en sistemas Windows, Linux, Mac o móbiles como Android/IOS aunque sea este más privativo.
 
-# Windows
-
-![logo-windows-13483](https://user-images.githubusercontent.com/42890499/226123949-2ad73fd8-6366-413c-a71f-0e311ee333b9.png)
-
-Windows es el nombre de una familia de distribuciones de software para PC, servidores, sistemas empotrados y antiguamente teléfonos inteligentes desarrollados y vendidos por Microsoft y disponibles para múltiples arquitecturas, tales como x86, x86-64 (x64) y ARM. Es un sistema propietario, pero se le pueden extraer una gran cantidad de información como tal.
-
-# Artefactos de un Disco Duro o memoria no volatil
-
-**Papelera de Reciclaje o RecicleBin** 
-
-Aquí dentro van los ficheros cuando se borran, sin embargo, en todo sistema se queda guardada una cantidad de ficheros y metadatos dentro de los misma. Normalmente esto pasa en sistemas que llevan incorporados un HDD o discos duros de antaño, o memorias USB/SD u otro tipo de sistema de almacenamiento. Sin embargo, los sistemas que hoy en día llevan un SSD es difícilmente que los ficheros que se hayan borrado de dicha carpeta de la memoria se puedan recuperar ya que llevan implementada una función llamada TRIM aunque puede llegar a depender de la propia implementación o configuración del sistema operativo en cuestión, ya que por ejemplo puede ser que Windows lo guarde un tiempo pero en una distribución Linux/Unix lo borre automáticamente dependiendo de la función.
-
 Estructura de un fichero en general
 -------------------------------------
 
@@ -25,6 +13,20 @@ Estructura de un fichero en general
 -	Cuerpo: Contiene el resto de la estructura del fichero y es útil para saber cómo poder recuperar los datos en general, ya que muchas veces si es un comprimido por ejemplo sin cifrar, los datos se pueden visualizar dentro de ese fichero ya que están internamente en el mismo.
 
 Todo esto lo explico, porque la estructura del fichero borrado es posible que se pueda recuperar con algún método como el carving en general, o a través de la $MFT o Master File Table en caso del sistema operativo Windows y posteriormente recuperar el fichero como tal, por lo que tenemos varias formas. Eso sí siempre hay que recordar que solo se mantendrá un tiempo debido a la función TRIM o bien porque los datos sustituyan a los bloques guardados dentro de la memoria de almacenamiento del dispositivo (por ejemplo, si borras 100GB de ficheros, te quedan 300 disponibles y metes 200, alguno de esos 200GB podría sustituir bloques de almacenamiento de los 100, haciendo imposible recuperar dichos datos).
+
+
+# Windows
+
+![logo-windows-13483](https://user-images.githubusercontent.com/42890499/226123949-2ad73fd8-6366-413c-a71f-0e311ee333b9.png)
+
+Windows es el nombre de una familia de distribuciones de software para PC, servidores, sistemas empotrados y antiguamente teléfonos inteligentes desarrollados y vendidos por Microsoft y disponibles para múltiples arquitecturas, tales como x86, x86-64 (x64) y ARM. Es un sistema propietario, pero se le pueden extraer una gran cantidad de información como tal.
+
+
+# Artefactos de un Disco Duro o memoria no volatil
+
+**Papelera de Reciclaje o RecicleBin** 
+
+Aquí dentro van los ficheros cuando se borran, sin embargo, en todo sistema se queda guardada una cantidad de ficheros y metadatos dentro de los misma. Normalmente esto pasa en sistemas que llevan incorporados un HDD o discos duros de antaño, o memorias USB/SD u otro tipo de sistema de almacenamiento. Sin embargo, los sistemas que hoy en día llevan un SSD es difícilmente que los ficheros que se hayan borrado de dicha carpeta de la memoria se puedan recuperar ya que llevan implementada una función llamada TRIM aunque puede llegar a depender de la propia implementación o configuración del sistema operativo en cuestión, ya que por ejemplo puede ser que Windows lo guarde un tiempo pero en una distribución Linux/Unix lo borre automáticamente dependiendo de la función.
 
 Localizaciones de la Papelera de Reciclaje en Windows
 --------------------------------------------------------
