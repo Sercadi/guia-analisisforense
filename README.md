@@ -26,12 +26,10 @@ Estructura de un fichero en general
 
 Todo esto lo explico, porque la estructura del fichero borrado es posible que se pueda recuperar con algún método como el carving en general, o a través de la $MFT o Master File Table en caso del sistema operativo Windows y posteriormente recuperar el fichero como tal, por lo que tenemos varias formas. Eso sí siempre hay que recordar que solo se mantendrá un tiempo debido a la función TRIM o bien porque los datos sustituyan a los bloques guardados dentro de la memoria de almacenamiento del dispositivo (por ejemplo, si borras 100GB de ficheros, te quedan 300 disponibles y metes 200, alguno de esos 200GB podría sustituir bloques de almacenamiento de los 100, haciendo imposible recuperar dichos datos).
 
-~~~Localizaciones de la Papelera de Reciclaje en Windows
+Localizaciones de la Papelera de Reciclaje en Windows
+--------------------------------------------------------
 
 C: Puede ser cualquier letra así que podríamos sustituirlo por %SystemDrive
 -	Windows 95/98/ME: C:\RECYCLED
 -	Windows XP: C:\Reycler, aquí se empezó a incluir lo que se llama SID del usuario o identificador de usuario, que indica a que usuario pertenece cada directorio de la papelera, por ejemplo, un número tipo SID-192851206, a lo mejor indica que el usuario es Pepito, mientras que otro número parecido indicará lo borrado por Manolo. Dentro de dicho directorio podemos tener los ficheros borrados y un fichero llamado INFO2 que contiene los metadatos de dicho directorio, útil para ver como ha pasado en una línea de tiempo los borrados y actualización de dicho directorio. Su tamaño máximo es el 10% del disco duro o sistema de almacenamiento que tengamos.
 -	Windows Vista/8/10/11: C:\$Recycle.bin, aquí tenemos el directorio que tendríamos en un análisis de Vista hacia delante, que es W11 hasta la fecha, contiene un SID como anteriormente, pero esta vez los ficheros van nombrados según una estructura inicial que empieza por $R y un id de fichero, por ejemplo $R9681A, también tenemos los metadatos pero como $I (algunos metadatos son el nombre, la ruta original donde se guardaba el fichero, el tamaño del mismo como tal y la fecha de eliminación, útil en un análisis forense.  Podemos extraerlos de alguna forma y con una herramienta como $I Parse o Rifiuti2 extraer un CSV con la información de dichos metadatos y poder ver una timeline con dichos datos.
-
-
-
