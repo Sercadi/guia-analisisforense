@@ -11,7 +11,7 @@ Esta es una guía realizada por mí, siguiendo pequeñas investigaciones por la 
 
 Windows es el nombre de una familia de distribuciones de software para PC, servidores, sistemas empotrados y antiguamente teléfonos inteligentes desarrollados y vendidos por Microsoft y disponibles para múltiples arquitecturas, tales como x86, x86-64 (x64) y ARM. Es un sistema propietario, pero se le pueden extraer una gran cantidad de información como tal.
 
-# Artefactos de un Disco Duro o memoria no volatil con Windows Instalado
+# Artefactos de un Disco Duro o memoria no volatil
 
 Papelera de Reciclaje o RecicleBin
 
