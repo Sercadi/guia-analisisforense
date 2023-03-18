@@ -5,7 +5,7 @@
 
 Esta es una guía realizada por mí, siguiendo pequeñas investigaciones por la red abierta o viendo material de libros, de uso y explicación de diferentes artefactos forenses en sistemas Windows, Linux, Mac o móbiles como Android/IOS aunque sea este más privativo.
 
-##### Windows
+### Windows
 
 ![pngegg (4)](https://user-images.githubusercontent.com/42890499/226121958-cd3645b2-179e-4957-88b5-e09273a8aa0a.png)
 
