@@ -13,7 +13,7 @@ Windows es el nombre de una familia de distribuciones de software para PC, servi
 
 # Artefactos de un Disco Duro o memoria no volatil
 
-Papelera de Reciclaje o RecicleBin
+**Papelera de Reciclaje o RecicleBin 
 
 Aquí dentro van los ficheros cuando se borran, sin embargo, en todo sistema se queda guardada una cantidad de ficheros y metadatos dentro de los misma. Normalmente esto pasa en sistemas que llevan incorporados un HDD o discos duros de antaño, o memorias USB/SD u otro tipo de sistema de almacenamiento. Sin embargo, los sistemas que hoy en día llevan un SSD es difícilmente que los ficheros que se hayan borrado de dicha carpeta de la memoria se puedan recuperar ya que llevan implementada una función llamada TRIM aunque puede llegar a depender de la propia implementación o configuración del sistema operativo en cuestión, ya que por ejemplo puede ser que Windows lo guarde un tiempo pero en una distribución Linux/Unix lo borre automáticamente dependiendo de la función.
 
