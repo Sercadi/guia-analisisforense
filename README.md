@@ -25,7 +25,8 @@ Estructura de un fichero en general
 
 Todo esto lo explico, porque la estructura del fichero borrado es posible que se pueda recuperar con algún método como el carving en general, o a través de la $MFT o Master File Table en caso del sistema operativo Windows y posteriormente recuperar el fichero como tal, por lo que tenemos varias formas. Eso sí siempre hay que recordar que solo se mantendrá un tiempo debido a la función TRIM o bien porque los datos sustituyan a los bloques guardados dentro de la memoria de almacenamiento del dispositivo (por ejemplo, si borras 100GB de ficheros, te quedan 300 disponibles y metes 200, alguno de esos 200GB podría sustituir bloques de almacenamiento de los 100, haciendo imposible recuperar dichos datos).
 
-~~~Localizaciones de la Papelera de Reciclaje en Windows
+Localizaciones de la Papelera de Reciclaje en Windows
+-----------------------------------------------------
 
 C: Puede ser cualquier letra así que podríamos sustituirlo por %SystemDrive
 -	Windows 95/98/ME: C:\RECYCLED
